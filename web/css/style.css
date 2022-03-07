@@ -1,0 +1,33 @@
+.centered{
+    text-align: center;
+}
+
+.dark{
+    background-color: darkblue;
+    color:aliceblue;
+}
+.photo-block{
+    border: 1px solid sandybrown;
+    margin: 1%;
+    border-radius: 10px;
+}
+.photo-image{
+    width: 100%
+}
+
+#gallery-container{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+
+
+.form-block label{
+    display: block;
+}
+
+.dark input, select{
+    background-color: rgb(141, 141, 141);
+    border: 1px solid black;
+    color: white;
+}
