@@ -5,23 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/utils/include.js"></script>
+   
     <title>Photo gallery</title>
 </head>
-<body class="dark"> 
+<body class="dark">
+ 
+ <div class="container"></div> 
+
+ <div id="page-header"></div> 
+  
   <div class="centered">
     <h1>Photo gallery</h1>
     <a href="upload_photo.html">Upload a new photo</a>
   </div>
-    <hr>
+  <hr>
+
+  <div id="card-gallery text.center">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://multimedia.andalucia.org/media/9DBB563CB8CA403F88B4E715C3D21144/img/D5A65F869E194C9AA261F78247CED885/image_270405_jpeg_800x600_q85.jpg?responsive" class="card-img-top" alt="A photo of a dog">
+          <div class="card-body">
+            <h5 class="card-title">Dogs</h5>
+            <p class="card-text">A photo of a dog</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://multimedia.andalucia.org/media/9DBB563CB8CA403F88B4E715C3D21144/img/D5A65F869E194C9AA261F78247CED885/image_270405_jpeg_800x600_q85.jpg?responsive" class="card-img-top" alt="A photo of a dog">
+          <div class="card-body">
+            <h5 class="card-title">Dogs</h5>
+            <p class="card-text">A photo of a dog</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://multimedia.andalucia.org/media/9DBB563CB8CA403F88B4E715C3D21144/img/D5A65F869E194C9AA261F78247CED885/image_270405_jpeg_800x600_q85.jpg?responsive" class="card-img-top" alt="A photo of a dog">
+          <div class="card-body">
+            <h5 class="card-title">Dogs</h5>
+            <p class="card-text">A photo of a dog</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+<!--
+  <div class="alert alert-danger">
+    Esto es un mensaje de error
+  </div>
+
+
+  <button class="btn btn-success">Botón estilo Bootstrap <span class="badge bg-warning">badge</span></button>
+  Esto es un <span class="badge bg-primary">badge</span>
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md">
+        Columna 1
+      </div>
+
+      <div class="col-md">
+        Columna 2
+      </div>
+      
+      <div class="col-md">
+        Columna 3
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-9">
+        Columna 4
+      </div>
+      <div class="col-md">
+        Columna 5
+      </div>
+    </div>
     <div>
+      <h3>Dogs</h3>
+      <h4>Score: +4.5</h4>
+      <img src="https://multimedia.andalucia.org/media/9DBB563CB8CA403F88B4E715C3D21144/img/D5A65F869E194C9AA261F78247CED885/image_270405_jpeg_800x600_q85.jpg?responsive" alt="A photo of a dog">
+      <p>A photo of a dog</p>  
+      <div>
+          <buttom>Edit this photo</buttom>
+          <buttom>Delete this photo</buttom>
+      </div>
+
+      <div>
         <h3>Dogs</h3>
         <h4>Score: +4.5</h4>
         <img src="https://multimedia.andalucia.org/media/9DBB563CB8CA403F88B4E715C3D21144/img/D5A65F869E194C9AA261F78247CED885/image_270405_jpeg_800x600_q85.jpg?responsive" alt="A photo of a dog">
         <p>A photo of a dog</p>  
-        <div>
-            <buttom>Edit this photo</buttom>
-            <buttom>Delete this photo</buttom>
-        </div>
-    </div>
+      
+  </div>
+    <hr>
+/!-->
+</div> 
+<script>
+  include("header.html", "#page-header");
+</script>
 </body>
 </html>

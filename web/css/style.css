@@ -3,7 +3,7 @@
 }
 
 .dark{
-    background-color: darkblue;
+    background-color: rgb(61, 61, 61);
     color:aliceblue;
 }
 .photo-block{
@@ -30,4 +30,10 @@
     background-color: rgb(141, 141, 141);
     border: 1px solid black;
     color: white;
+}
+
+div.card{
+    background-color: rgb(109, 109, 109);
+    color: white;
+    margin-bottom: 2.5%;
 }

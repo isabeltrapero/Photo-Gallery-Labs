@@ -6,24 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/utils/include.js"></script>
+
+
     <title>Register usuario</title>
 </head>
-<body>
+<body class="dark">
+  <div class="page-header"></div> 
+  <div class="container"></div> 
     <h1 class="centered">Register a new user</h1>
     <hr>
     <form action="POST">
-        <div class="form-block">
-          <label for="firstName-input">First name:</label>
-          <input type="text" name="firstName" id="firstName-input">
+      <div class="row">
+        <div class="col-md">
+
+        
+          <label class="form-label" for="firstName-input">First name:</label>
+          <input class="form-control" type="text" name="firstName" id="firstName-input">
         </div>
 
-        <div class="form-block">
-            <label for="lastName-input">Last name:</label>
-            <input type="text" name="lastName" id="lastName-input">
+        <div class="col-md">
+            <label class="form-label" for="lastName-input">Last name:</label>
+            <input class="form-control" type="text" name="lastName" id="lastName-input">
+          </div>
         </div>
-
+    </div>
+    <div class="row">
+      <div class="col-md">
         <div class="form-block">
-          <label for="telephone-input">Phone:</label>
+          <label class="form-label" for="telephone-input">Phone:</label>
           <select name="phone-prefix" id="phone-prefix-input">
             <option value="34">España (+34)</option>
             <option value="1">EEUU (+1)</option>
@@ -33,15 +46,44 @@
           <input type="text" name="telephone">
         </div>
 
+      </div>
+      <div class="col-md">
         <div class="form-block">
-          <label for="user-input">User name:</label>
+          <label class="form-label" for="user-input">Email:</label>
           <input type="text" name="userName" id="userName-input">
         </div>
-        <div class="form-block">
-          <label for="password-input">Password:</label>
-          <input type="text" name="password" id="password-input">
-          <input type="sumit">
       </div>
+      <div class="col-md">
+        <div class="form-block">
+          <label class="form-label" for="user-input">User name:</label>
+          <input type="text" name="userName" id="userName-input">
+        </div>
+      </div>
+      </div>
+      <div class="row">
+          <div class="col-md">
+
+        
+            <label class="form-label" for="firstName-input">Password:</label>
+            <input class="form-control" type="text" name="firstName" id="firstName-input">
+          </div>
+          <div class="col-md">
+
+        
+            <label class="form-label" for="firstName-input">Repeat password:</label>
+            <input class="form-control" type="text" name="firstName" id="firstName-input">
+          </div>
+        
+      </div>
+    </div>
+
+        
+
+       
     </form>
+
+    <script>
+      include("header.html", "#page-header");
+    </script>
 </body>
 </html>
