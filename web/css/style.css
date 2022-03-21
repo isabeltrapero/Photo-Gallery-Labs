@@ -37,3 +37,32 @@ div.card{
     color: white;
     margin-bottom: 2.5%;
 }
+
+.dark input:focus, select:focus{
+    background-color: rgb(109, 109, 109);
+    color: white;
+
+}
+
+#page-header{
+    margin-bottom: 2%;
+}
+
+button[type="submit"]{
+    margin-top: 1.5%;
+}
+
+img.profile-picture{
+    max-width: 20px;
+    border-radius: 50%;
+}
+
+.dark .toast{
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+.dark .toast-header{
+    background-color: rgb(102, 102, 102);
+    color: white;
+}

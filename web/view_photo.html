@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/utils/include.js"></script>
+
+    <title>View photo</title>
+</head>
+<body class="dark">
+    <div id="page-header"></div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-9">
+                <h2>Dogs</h2>
+                <h4>A photo of a dog</h4>
+                <p>Uploaded by <a href="profile.html">
+                    @Isa 
+                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile picture" class="profile-picture">
+
+                   </a>  on 21/03/2022
+                </p>
+                <img src="https://multimedia.andalucia.org/media/9DBB563CB8CA403F88B4E715C3D21144/img/D5A65F869E194C9AA261F78247CED885/image_270405_jpeg_800x600_q85.jpg?responsive" class="img-fluid" alt="A photo of a dog">
+
+            </div>
+            <div class="col-md-3">
+                <div class="toast-container">
+                    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                        <div class="toast-header">
+                          <strong class="me-auto">
+                              <a href="profile.html">@Isa 
+                                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile picture" class="profile-picture"></a>
+                          </strong>
+                          <small>21/03/2020</small>
+                        </div>
+                        <div class="toast-body">
+                          Qué perrito tan mono!
+                        </div>
+                      </div>
+
+                      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                        <div class="toast-header">
+                          <strong class="me-auto">
+                              <a href="profile.html">@Isa 
+                                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile picture" class="profile-picture"></a>
+                          </strong>
+                          <small>21/03/2020</small>
+                        </div>
+                        <div class="toast-body">
+                          Pues si
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>  
+        <div class="row text-center">
+            <div class="col-md">
+                <div>
+                    <h4>Rate this foto: </h4>
+                    <button class="btn btn-success"><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+                    <button class="btn btn-danger"><i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        include("header.html", "#page-header");
+
+        let toasts = document.querySelectorAll(".toast");
+        for(let htmlToast of toasts) {
+            let toastBootstrap = bootstrap.Toast.getOrCreateInstance(htmlToast);
+            toastBootstrap.show();
+
+        }
+    </script>
+    
+</body>
+</html>
