@@ -21,7 +21,6 @@
 }
 
 
-
 .form-block label{
     display: block;
 }
@@ -48,9 +47,6 @@ div.card{
     margin-bottom: 2%;
 }
 
-button[type="submit"]{
-    margin-top: 1.5%;
-}
 
 img.profile-picture{
     max-width: 20px;
@@ -63,6 +59,6 @@ img.profile-picture{
 }
 
 .dark .toast-header{
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(172, 152, 152);
     color: white;
 }
